@@ -4,16 +4,13 @@ using namespace std;
 
 void solve()
 {
-    int x,y,z;
-    cin>>x>>y>>z;
-    if(z-z%x+y <= z){
-        cout<<z-z%x+y<<endl;
-    }
-    else
+    int n,a,b;
+    cin>>n>>a>>b;
+    for (int i = 0; i < n; i++)
     {
-        cout<<z-z%x-(x-y)<<endl;
+        cout<<char('a' + i%b);
     }
-    
+    cout<<"\n";
 }
 int main()
 {
