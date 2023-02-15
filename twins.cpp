@@ -9,6 +9,8 @@ const int M = 1e9 + 7;
 // To store prime factors
 vector<ll> pr;
 vector<bool> primes(N, 1);
+//string -> U & u function
+//transform(s.begin(), s.end(), s.begin(), ::toupper);
 ll binExpIter(ll a, ll b)
 {
     ll ans = 1;
@@ -29,15 +31,32 @@ ll binExpIter(ll a, ll b)
 void solve(){
     int n;
     cin>>n;
-    // int ans = binExpIter(5,n);
-    
-    // int f = 1;
-    // cout<<ans%100<<endl;
-    // for(auto it : v){
-    //     cout<<it;
-    // }cout<<endl;
-    cout<<25<<endl;
-
+    int a[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin>>a[i];
+    }
+    int sum=0;
+    for (int i = 0; i < n; i++)
+    {
+        sum+=a[i];
+    }
+    sort(a,a+n);
+    reverse(a,a+n);
+    int ct = 0;
+    int sum1 = 0;
+    for (int i = 0; i < n; i++)
+    {
+        ct++;
+        sum1+=a[i];
+        if (sum1>(sum/2))
+        {
+            break;
+        }
+        
+        
+    }
+    cout<<ct<<endl;
 }
 int main(){
 ios_base::sync_with_stdio(false);
