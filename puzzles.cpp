@@ -30,28 +30,27 @@ ll binExpIter(ll a, ll b)
 }
 void solve()
 {
-    int n;
-    cin>>n;
-    string s;
-    cin>>s;
-    int zct=0;
-    int oct=0;
-    for(int i = 0;i<n;i++){
-        if (s[i] == '0')
-        {
-            zct++;
-        }
-        else if(s[i] == '1'){
-            oct++;
-        }
+    int n, m;
+    cin >> n >> m;
+    int a[m];
+    for (int i = 0; i < m; i++)
+    {
+        cin >> a[i];
     }
-    cout<<abs(zct-oct)<<endl;
+    sort(a, a + m);
+    // reverse(a,a+m);
+    int mnd = INT_MAX;
+    for (int i = 1; i < abs(m - n); i++)
+    {
+        mnd = min(mnd, a[i + n - 1] - a[i]);
+    }
+    cout << mnd << endl;
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-   solve();
+    solve();
 
     return 0;
 }

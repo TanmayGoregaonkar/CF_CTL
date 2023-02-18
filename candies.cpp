@@ -31,27 +31,27 @@ ll binExpIter(ll a, ll b)
 void solve()
 {
     int n;
-    cin>>n;
-    string s;
-    cin>>s;
-    int zct=0;
-    int oct=0;
-    for(int i = 0;i<n;i++){
-        if (s[i] == '0')
-        {
-            zct++;
-        }
-        else if(s[i] == '1'){
-            oct++;
-        }
+    cin >> n;
+    if (n % 3 == 0)
+    {
+        cout << n / 3 << endl;
     }
-    cout<<abs(zct-oct)<<endl;
+    else
+    {
+        cout << (n / 3) + 1 << endl;
+    }
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-   solve();
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        solve();
+    }
 
     return 0;
 }

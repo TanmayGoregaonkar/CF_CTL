@@ -32,26 +32,29 @@ void solve()
 {
     int n;
     cin>>n;
-    string s;
-    cin>>s;
-    int zct=0;
-    int oct=0;
-    for(int i = 0;i<n;i++){
-        if (s[i] == '0')
+    int x;
+    for (int i = 2; i <= 35; i++)
+    {
+        if (n % (binExpIter(2,i)-1))
         {
-            zct++;
+            continue;
         }
-        else if(s[i] == '1'){
-            oct++;
-        }
+        x = n/(binExpIter(2,i)-1);
+        break;
     }
-    cout<<abs(zct-oct)<<endl;
+    cout<<x<<endl;
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-   solve();
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        solve();
+    }
 
     return 0;
 }

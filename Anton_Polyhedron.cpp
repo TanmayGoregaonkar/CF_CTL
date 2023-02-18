@@ -33,25 +33,47 @@ void solve()
     int n;
     cin>>n;
     string s;
-    cin>>s;
-    int zct=0;
-    int oct=0;
-    for(int i = 0;i<n;i++){
-        if (s[i] == '0')
-        {
-            zct++;
-        }
-        else if(s[i] == '1'){
-            oct++;
-        }
+    vector<string>v;
+    for (int i = 0; i < n; i++)
+    {
+        cin>>s;
+        v.push_back(s);
     }
-    cout<<abs(zct-oct)<<endl;
+    int ct = 0;
+    for(auto it : v){
+        if(it == "Tetrahedron"){
+            ct+=4;
+        }
+        else if(it == "Cube")
+        {
+            ct+=6;
+        }
+        else if(it == "Octahedron")
+        {
+            ct+=8;
+        }
+        
+        else if(it == "Dodecahedron")
+        {
+            ct+=12;
+        }
+        
+        else if(it == "Icosahedron")
+        {
+            ct+=20;
+        }
+        
+    }
+    cout<<ct<<endl;
+    
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-   solve();
+    
+        solve();
+    
 
     return 0;
 }
