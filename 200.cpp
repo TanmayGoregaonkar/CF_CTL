@@ -30,41 +30,24 @@ ll binExpIter(ll a, ll b)
 }
 void solve()
 {
-    int n;
-    cin >> n;
-    // int a[3][3];
-    vector<vector<int>> v(n, vector<int>(3, 0));
-    for (int i = 0; i < n; i++)
+    int k, r;
+    cin >> k >> r;
+    // int cnt = 0;
+    for (int i = 1; i <= 9; i++)
     {
-        for (int j = 0; j < 3; j++)
-        {
-            cin >> v[i][j];
+        if(((k*i)-r)%10 == 0 || (k*i)%10 == 0){
+            cout<<i<<endl;
+            break;
         }
     }
-    bool ans=true;
-    for (int j = 0; j < 3; j++)
-    {
-        int sum = 0;
-        for (int i= 0; i< n; i++)
-        {
+    
 
-            sum += v[i][j];
-        }
-        if(sum!=0){
-            ans=false;
-        }
-    }
-    if(ans){
-        cout<<"YES"<<endl;
-        return;
-    }
-    cout<<"NO"<<endl;
+    // cout << cnt << endl;
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-
     solve();
 
     return 0;

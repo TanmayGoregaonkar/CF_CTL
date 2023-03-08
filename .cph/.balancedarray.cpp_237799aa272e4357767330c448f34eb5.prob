@@ -1,0 +1,1 @@
+{"name":"Local: balancedarray","url":"d:\\Workshop\\balancedarray.cpp","tests":[{"id":1678271778437,"input":"5\n2\n4\n6\n8\n10\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\balancedarray.cpp","group":"local","local":true}

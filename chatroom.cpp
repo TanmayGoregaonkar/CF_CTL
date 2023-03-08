@@ -30,35 +30,21 @@ ll binExpIter(ll a, ll b)
 }
 void solve()
 {
-    int n;
-    cin >> n;
-    // int a[3][3];
-    vector<vector<int>> v(n, vector<int>(3, 0));
-    for (int i = 0; i < n; i++)
+    string s ;
+    cin>>s;
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
+    string hello = "hello";
+    int j = 0;int p  = 0;
+    for (int i = 0; i < s.length(); i++)
     {
-        for (int j = 0; j < 3; j++)
-        {
-            cin >> v[i][j];
+        if(s[i] == hello[j]){
+            p++;
+            j++;
         }
     }
-    bool ans=true;
-    for (int j = 0; j < 3; j++)
-    {
-        int sum = 0;
-        for (int i= 0; i< n; i++)
-        {
+    if(p==5)cout<<"YES\n";
+    else cout<<"NO\n";
 
-            sum += v[i][j];
-        }
-        if(sum!=0){
-            ans=false;
-        }
-    }
-    if(ans){
-        cout<<"YES"<<endl;
-        return;
-    }
-    cout<<"NO"<<endl;
 }
 int main()
 {
