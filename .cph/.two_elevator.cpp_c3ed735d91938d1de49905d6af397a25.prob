@@ -1,0 +1,1 @@
+{"name":"Local: two_elevator","url":"d:\\Workshop\\two_elevator.cpp","tests":[{"id":1681536510604,"input":"3\n1 2 3\n3 1 2\n3 2 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\two_elevator.cpp","group":"local","local":true}
