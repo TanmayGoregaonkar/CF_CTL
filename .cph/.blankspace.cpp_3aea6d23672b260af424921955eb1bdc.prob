@@ -1,0 +1,1 @@
+{"name":"Local: blankspace","url":"d:\\Workshop\\blankspace.cpp","tests":[{"id":1683384435723,"input":"5\n5\n1 0 0 1 0\n4\n0 1 1 1\n1\n0\n3\n1 1 1\n9\n1 0 0 0 1 0 0 0 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\blankspace.cpp","group":"local","local":true}

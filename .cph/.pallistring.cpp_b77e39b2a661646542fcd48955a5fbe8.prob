@@ -1,0 +1,1 @@
+{"name":"Local: pallistring","url":"d:\\Workshop\\pallistring.cpp","tests":[{"id":1683699976368,"input":"4\nabacaba\naaa\ncodeforcesecrofedoc\nlol","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\pallistring.cpp","group":"local","local":true}
