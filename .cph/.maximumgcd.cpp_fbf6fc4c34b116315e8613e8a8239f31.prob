@@ -1,0 +1,1 @@
+{"name":"Local: maximumgcd","url":"d:\\Workshop\\maximumgcd.cpp","tests":[{"id":1678193800373,"input":"3\n4 1 7\n-2 4 -1\n1 -5 -3\n","output":"NO"},{"id":1678195475793,"input":"3\n3 -1 7\n-5 2 -4\n2 -1 -3\n","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\maximumgcd.cpp","group":"local","local":true}

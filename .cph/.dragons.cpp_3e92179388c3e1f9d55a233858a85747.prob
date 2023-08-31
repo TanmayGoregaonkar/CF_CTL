@@ -1,0 +1,1 @@
+{"name":"Local: dragons","url":"d:\\Workshop\\dragons.cpp","tests":[{"id":1678358850239,"input":"10 1\n100 100\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\dragons.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: lc_valid_pallindrome_ll","url":"d:\\Workshop\\lc_valid_pallindrome_ll.cpp","tests":[{"id":1681302441509,"input":"7\n4\nmeOw\n14\nmMmeoOoWWWwwwW\n3\nmew\n7\nMmeEeUw\n4\nMEOW\n6\nMmyaVW\n5\nmeowA","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\lc_valid_pallindrome_ll.cpp","group":"local","local":true}

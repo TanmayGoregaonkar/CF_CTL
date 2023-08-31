@@ -1,0 +1,1 @@
+{"name":"Local: stringtask","url":"d:\\Workshop\\stringtask.cpp","tests":[{"id":1676808287506,"input":"tour","output":".t.r"},{"id":1676808595316,"input":"Codeforces","output":".c.d.f.r.c.s"},{"id":1676808647220,"input":"aBAcAba","output":".b.c.b"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Workshop\\stringtask.cpp","group":"local","local":true}

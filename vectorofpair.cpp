@@ -10,11 +10,9 @@ void printVector(vector<pair<int, int>> &v)
     }
     cout<<endl;
 }
+
 int main()
 {
-    // vector<pair<int,int>>v={{1,2},{2,1},{3,2}};
-    // printVector(v);
-
     int n;
     cin>>n;
     vector<pair<int,int>>v;
@@ -24,6 +22,7 @@ int main()
         cin>>x>>y;
         v.push_back({x,y});
     }
+
     printVector(v);
     return 0;
 }

@@ -1,0 +1,16 @@
+Plag point
+-motivation
+Smartphones are used by almost everyone today.
+
+-introduction 2nd para
+analysis of malware : Static Analysis and Dynamic Analysis. 
+
+- literature paper 4
+It is found that the accuracy given by
+
+-B. Malware and its classification[3]
+These are classified into two Categories :-
+
+-Dynamic Analysis
+based features, HyperText Transfer Protocol(HTTP) based features,Origin Destination
+based features and Transmission Control Protocol(TCP) based features.

@@ -2,41 +2,40 @@
 #define ll long long int
 using namespace std;
 
-void solve()
-{
-    int n;
-    cin>>n;
-    int a[n];
-    int ans =0;
-    for (int i = 0; i < n; i++)
-    {
-        cin>>a[i];
-    }
-    ll x=(2*a[0])-1;
-
-    for (int i = 0; i < n; i++)
-    {
-        ans+=(a[i]/x);
-        if(a[i]%x==0){
-            ans--;
-        }
-    }
-    
-    cout<<ans<<"\n";
-
-
-}
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-    int t;
+    int t = 1;
     cin >> t;
-
     while (t--)
     {
-        solve();
-    }
+        int n;
+        cin >> n;
+        string s;
+        cin >> s;
 
-    return 0;
+        int e = 0;
+        int o = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (s[i] == '1')
+            {
+                if (i % 2 == 0)
+                {
+                    e++;
+                }
+                else
+                {
+                    o++;
+                }
+            }
+        }
+        if (e > 0 && o > 0)
+        {
+            cout << 1 << endl;
+        }
+        else
+        {
+            cout << 2 << endl;
+        }
+    }
 }
